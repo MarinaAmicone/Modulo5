@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laboratorio 2</title>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="M5-logo-azul.svg" alt=" ">
+        <a class="activo" href="index.html">HOME</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <main>
+        <h2>¿Querés que nos contactamos con vos?</h2>
+        <form action="codigo.php" method="post">
+            <p>Dejanos tu consulta:</p>
+            <label for="nombre">Nombre completo <span>*</span></label>
+            <input type="text" id="name" required>
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" required placeholder="email@gmail.com">
+            <label for="comentario">Comentario <span>*</span></label>
+            <textarea name="comentario" id="comentario" required></textarea>
+
+            <input  class="button" id="reset" value="Resetear" type="reset">
+            <input class="button" id="enviar" value="Enviar"  type="submit">
+        </form>
+    </main>
+</body>
+</html>
